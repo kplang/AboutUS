@@ -1,0 +1,53 @@
+## ⚙️ KP Embedded Syntax
+
+### 🔌 GPIO
+```kp
+pin_mode(5, "OUTPUT")
+pin_mode(6, "INPUT")
+
+digital_write(5, 1)  # HIGH
+digital_write(5, 0)  # LOW
+
+val = digital_read(6)
+print("Pin 6 state:", val)
+```
+
+### ⚡ PWM
+```kp
+pwm_start(3, freq=1000, duty=50)
+pwm_set_duty(3, 75)
+pwm_stop(3)
+```
+
+### 🔗 I2C
+```kp
+i2c_setup()
+i2c_write(addr=0x76, reg=0xF4, data=0x27)
+val = i2c_read(addr=0x76, reg=0xF4, len=1)
+print("Register val:", val)
+```
+
+### 🧬 SPI
+```kp
+spi_setup()
+spi_write([0xAA, 0xBB, 0xCC])
+data = spi_read(3)
+print("SPI data:", data)
+```
+
+### 📡 UART (Serial)
+```kp
+uart_setup(baud=9600)
+uart_send("Hello KP")
+msg = uart_receive()
+print("Received:", msg)
+```
+
+### 🎚 ADC (Analog Read)
+```kp
+value = analog_read(0)
+print("Analog value:", value)
+```
+
+---
+More syntax coming soon: dashboards, API export, REPL tools and more!
