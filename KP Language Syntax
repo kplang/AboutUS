@@ -1,0 +1,79 @@
+# KP Language Syntax Notes ✍️
+
+## 🟢 Variables
+```kp
+a = 10
+b = 5
+```
+
+## 🔁 Loops
+```kp
+count = 0
+while True:
+    print(count)
+    count += 1
+    sleep(1000)  # 1 second
+```
+
+## ✅ Conditions
+```kp
+if a > b:
+    print("a is greater")
+elif a == b:
+    print("a equals b")
+else:
+    print("b is greater")
+```
+
+## 🧩 Functions
+```kp
+def greet(name):
+    print("Hello, " + name)
+
+greet("CodeVox")
+```
+
+## 📦 Modules (flat-style for now)
+All `.kp` files loaded with `kp_runtime` get global access:
+```kp
+# no import needed; just use directly
+read_sensor()
+log_data(temp, hum)
+ask_llm("Explain PWM")
+```
+
+## 🧠 LLM Integration
+```kp
+summary = ask_llm("Summarize sensor data")
+print(summary)
+```
+
+## 🗣 Text-to-Speech (soon)
+```kp
+speak("Temperature rising, humidity falling")
+```
+
+## 🕰 Time
+```kp
+sleep(1500)  # sleep for 1.5 seconds
+```
+
+---
+
+## 🧪 KP REPL Cheatsheet
+
+| Command            | Description                         |
+|--------------------|-------------------------------------|
+| `a = 5`            | Assign value                        |
+| `print(a)`         | Print variable                      |
+| `def fn(): ...`    | Define function                     |
+| `ask_llm("text")` | Query LLM, get response             |
+| `speak("text")`    | Speak the given text (TTS)          |
+| `sleep(1000)`      | Wait for 1 sec                      |
+| `read_sensor()`    | Get temp/humidity (if module loaded)|
+| `log_data(a, b)`   | Append to log file                  |
+
+Use REPL to test syntax interactively: one line at a time.
+
+---
+More syntax coming soon: lists, dicts, classes, hardware ops (GPIO, I2C, SPI), and more!
