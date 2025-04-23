@@ -76,4 +76,35 @@ sleep(1500)  # sleep for 1.5 seconds
 Use REPL to test syntax interactively: one line at a time.
 
 ---
-More syntax coming soon: lists, dicts, classes, hardware ops (GPIO, I2C, SPI), and more!
+
+## ⚙️ KP Embedded Syntax
+
+### 🔌 GPIO
+```kp
+pin_mode(5, "OUTPUT")
+pin_mode(6, "INPUT")
+
+digital_write(5, 1)  # HIGH
+digital_write(5, 0)  # LOW
+
+val = digital_read(6)
+print("Pin 6 state:", val)
+```
+
+### ⚡ PWM
+```kp
+pwm_start(3, freq=1000, duty=50)
+pwm_set_duty(3, 75)
+pwm_stop(3)
+```
+
+### 🔗 I2C
+```kp
+i2c_setup()
+i2c_write(addr=0x76, reg=0xF4, data=0x27)
+val = i2c_read(addr=0x76, reg=0xF4, len=1)
+print("Register val:", val)
+```
+
+---
+More syntax coming soon: SPI, UART, ADC, dashboards, API export, REPL tools and more!
