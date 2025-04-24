@@ -1,4 +1,4 @@
-**KP Programming Language - Author - KarthiK**
+**KP-LANG { Kevell Programming Language } - Author - KarthiK**
 
 3V build Process -  "Assembly-level control + Pythonic simplicity + LLM/AI superpowers all inside a single language that works across bare-metal boards, edge devices, Linux, RTOS, and even cloud."
 
