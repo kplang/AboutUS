@@ -1,5 +1,19 @@
 **KP-LANG { Kevell Programming Language } - Author - KarthiK**
 
+**KP Language - Vision & Purpose
+🚀 Mission:
+To create a next-gen programming language that:
+
+Combines Python's simplicity with C/Assembly-level control
+
+Targets embedded systems
+
+Supports AI/ML, LLMs, sensor I/O, and hardware control
+
+Offers cross-language interoperability (Python, Node.js, C, Java, Go, Scala)
+
+**
+
 3V build Process -  "Assembly-level control + Pythonic simplicity + LLM/AI superpowers all inside a single language that works across bare-metal boards, edge devices, Linux, RTOS, and even cloud."
 
 kp is a new language blending Python's simplicity and C's performance mindset, designed for scripting, embedded automation, and AI/ML.
