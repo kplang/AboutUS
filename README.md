@@ -12,6 +12,11 @@ Supports AI/ML, LLMs, sensor I/O, and hardware control
 
 Offers cross-language interoperability (Python, Node.js, C, Java, Go, Scala)
 
+Cross-Language Execution Core for KP
+🎯 Goal:
+Allow any KP program to embed Python, Node.js, Go, C, Java, or Scala blocks — executed seamlessly at runtime.
+
+
 **
 
 3V build Process -  "Assembly-level control + Pythonic simplicity + LLM/AI superpowers all inside a single language that works across bare-metal boards, edge devices, Linux, RTOS, and even cloud."
